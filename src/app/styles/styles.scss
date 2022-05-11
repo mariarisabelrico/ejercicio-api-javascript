@@ -1,0 +1,129 @@
+@import './custom';
+@import './variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;  
+  background-image: url(../assets/fondo.png);
+  
+}
+
+#botones{
+  display: flex;
+  justify-content: center;
+  //align-items: stretch;
+  width: 50%;
+  padding: 1rem;  
+  flex-direction: row;  
+  
+}
+#botones button{width: 10; padding: 1rem; align-self: initial; display:block; border-radius: 10px; 
+  font-weight: bold; transition: all .3s ease-in-out;transform:scale(1) ;}
+
+  #botones button:hover {background-color: #ccc;}
+  #botones button:active {transform: scale(0.8);}
+
+#listado{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.main {
+  width: 100&; 
+  align-items:center;
+  height: #385170;
+  display: flex;
+  justify-content: space-between;    
+  padding: 2rem;
+  align-content: flex-end;
+  flex-direction: column;
+  margin-bottom: 5rem;
+    
+}
+
+.buscador{
+  flex:1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.input{
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0.2rem;
+  text-align: center;
+  align-self: center;
+  outline: none;
+  border:3px solid white;
+  transition: all .3s ease-in-out;
+
+}
+
+.input:focus{border:3px solid steelblue}
+
+.tex-aside{
+  font-family:Brush Script Mt;
+  display: flex;
+  color:white;
+  font-style: italic;
+  font-size: 50px;  
+  max-width: 800px;
+  height: 100%;
+  flex: 1;
+}
+
+.aside{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.profile-img{
+  width: 20rem;
+  
+}
+.hader-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #222831;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;  
+  width: 100%;
+  height: auto;
+  
+}
+
+/* On mouse-over, add a deeper shadow */
+img:hover {
+  box-shadow: 0 8px 16px 0 rgba(41, 24, 192, 0.8);
+  cursor: pointer;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
